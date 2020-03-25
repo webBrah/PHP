@@ -26,7 +26,7 @@
             $totalPrice = 146.28;
 
             // STRING: Simple text that must be enclosed within double quotations " " or single quotations ' '
-            $fullName = "Brad Hussey";
+            $fullName = "webBrah";
 
             // DISPLAY VARIABLES ON SCREEN
             echo "Hello, my name is $fullName and I am $myAge years old!";
