@@ -31,8 +31,7 @@
             // DISPLAY VARIABLES ON SCREEN
             echo "Hello, my name is $fullName and I am $myAge years old!";
 
-            // CONSTANTS
-            define( "TITLE", "PHP Variables & Constants" );
+            
 
             echo TITLE;
 
