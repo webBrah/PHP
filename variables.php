@@ -29,9 +29,7 @@
             $fullName = "webBrah";
 
             // DISPLAY VARIABLES ON SCREEN
-            echo "Hello, my name is $fullName and I am $myAge years old!";
-
-            
+            echo "Hello, my name is $fullName and I am $myAge years old!";            
 
             echo TITLE;
 
@@ -40,33 +38,3 @@
         
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
