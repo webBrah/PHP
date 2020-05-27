@@ -15,6 +15,7 @@
         <!-- COMMENT -->
         <?php
             // single line comment
+            // test comment
             # single line comment
             /*
              multi
