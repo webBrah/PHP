@@ -15,6 +15,7 @@
         <!-- COMMENT -->
         <?php
             // single line comment
+            //Me pela el tallo
             # single line comment
             /*
              multi
