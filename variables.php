@@ -1,5 +1,6 @@
+
 <?php
-    define( "TITLE", "PHP Variables & Constants" );
+    define(TITLE, "Php Variables & Constants");
 ?>
 
 <!DOCTYPE html>
@@ -7,37 +8,34 @@
 <html>
 
     <head>
-        <title><?php echo TITLE; ?></title>
+        <title><?php echo TITLE ?></title>
     </head>
     
     <body>
 
-        <?php
-            
-            // VARIABLES
-            
-            // BOOLEAN: A boolean variable specifies a value of true or false
+       <?php
+
+            //BOOLEAN a boolean variable speciafies a value of true and false
             $loggedIn = true;
 
-            // INTEGER: An integer variable is any whole number
-            $myAge = 26;
+            //Integer an integer variable is a whole number
+            $myAge = 38;
 
-            // FLOATING POINT: Usually a fractional number, with a decimal
+            //FLOATING POINT usually a fractional number with a decimal
             $totalPrice = 146.28;
 
-            // STRING: Simple text that must be enclosed within double quotations " " or single quotations ' '
-            $fullName = "Brad Hussey";
+            //STRING simple text that must be enclosed within double quotations "" or single quotations ' '
+            $fullName = "Ricardo Rivera";
 
-            // DISPLAY VARIABLES ON SCREEN
-            echo "Hello, my name is $fullName and I am $myAge years old!";
+            //DISPLAY VARIABLES ON SCREEN
+            echo ("Hello, my name is $fullName and I am $myAge years old!");
 
-            // CONSTANTS
-            define( "TITLE", "PHP Variables & Constants" );
-
+            //CONSTANTS
+            define(TITLE, "Php Variables & Constants");
             echo TITLE;
 
-        ?>
-        
+
+       ?>
         
     </body>
 </html>
