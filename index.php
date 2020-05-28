@@ -8,35 +8,38 @@
     
     <body>
     
-        <?php
-            echo "Hello world!";
+        <?php 
+            echo ("Hello World!");
         ?>
-        
-        <!-- COMMENT -->
-        <?php
-            // single line comment
-            //Me pela el tallo
-            //Another minor change
-            # single line comment
+
+
+        <!--Comments-->
+              
+        <?php 
+            //Single Line Comment
+            #Single Line Comment
             /*
-             multi
-             line
-             comment here
+            Multi
+            Line
+            Comment
             */
         ?>
-        
-        <!-- NOT CASE SENSITIVE -->
-        <?php
-            print('hello world!<br>');
-            Print('hello world!<br>');
-            PRINT('hello world!<br>');
 
-            $name = "Brad";
+
+        <!--NOT CASE SENSITIVE-->
+        <?php
+            Print("Hello World<br>");
+            PRINT("Hello World<br>");
+            print("Hello World<br>");
+
+            $name = "Ricardo";
+
             echo "Hello " . $name . "<br>";
             echo "Hello " . $Name . "<br>";
             echo "Hello " . $NAME . "<br>";
         ?>
-        
+
+
     </body>
 </html>
 
