@@ -1,57 +1,12 @@
 f<?php
     define( "TITLE", "Honest Click Bait Headlines" );
-   
+    include("functions.php");
+
     if( isset( $_POST["fix_submit"])){
-        // grab value from textarea in $_POST collection
-        // make all letters lowercase using strtolower() function
-        // store in a variable
-        $clickbait = strtolower( $_POST["clickbait_headline"]);
-
-        // store array of clickbait-sounding words or phrases
-        $a = array(
-            "scientists",
-            "doctors",
-            "hate",
-            "stupid",
-            "weird",
-            "simple",
-            "trick",
-            "shocked me",
-            "you'll never believe",
-            "hack",
-            "epic",
-            "unbelievable"
-        );
-
-        // store array of repplacement words or phrases
-        /* make sure each replacement is in the same order
-           as the clickbait word you're trying to replace */
-
-        $b = array(
-            "so-called scientists",
-            "so-called doctors",
-            "aren't threatened by",
-            "average",
-            "completely normal",
-            "ineffective",
-            "method",
-            "is no different than others",
-            "you won't really be surprised by",
-            "slightly im prove",
-            "boring",
-            "normal"
-        ); 
-
-        // use the str_replace() function to replace the words
-        // uppercase the first letter in every word using ucwords() function
-        // store in a variable
-
-        $honestHeadline = str_replace( $a, $b, $clickbait );
-
-
+        //call function
+        checkForClickBait();
     }
-
-?>
+    ?>
 
 <!DOCTYPE html>
 
@@ -90,12 +45,19 @@ f<?php
            
             <?php
                 if( isset( $_POST["fix_submit"])){
-                    // use ucwords() function to uppercase first letter in every keyword
-                    // echo the variable on the screen
-                    echo "<strong class='text-danger'>Original Headline</strong><h4>".ucwords($clickbait)."</h4><hr>";
 
-                    // echo the honest headline on the screen
-                    echo "<strong class='text-success'>Honest Headline</strong><h4>".ucwords($honestHeadline)."</h4>";
+                    // get first value in array returned by checkForClickBait() function
+                    // store in a variable
+                    $clickBait = checkForClickBait()[0];
+
+                    // get second value in array returned by checkForClickBait() function
+                    // store in a variable
+
+                    $honestHeadline = checkForClickBait()[1];
+
+                    // call function
+                    // pass two arguments in the funcion
+                    displayHonestHeadline( $clickBait, $honestHeadline);
                 }
             ?>
 
