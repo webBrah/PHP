@@ -29,50 +29,40 @@
         <div class="container">
             <h1><?php echo TITLE; ?></h1>
             
-            <?php
+           <?php
                 // IF expression is TRUE, do something
                 // IF expression is FALSE, don't do anything
-                
+
                 $foo = 99;
                 $bar = 79;
 
-                if ( $foo > $bar ) {
-                    echo "$foo is greater than $bar <br>";
+                if ( $foo > $bar){  
+                    echo "$foo is greater than $bar<br>";
                 }
 
                 // ELSE
-
                 $currentlyListeningTo = "Barenaked Ladies";
-                
-                if ( $currentlyListeningTo == "The Tragically Hip" ) {
-                    
+
+                if ( $currentlyListeningTo == "The Tragically Hip"){
                     echo "You are listening to $currentlyListeningTo";
-                    
                 } else {
-                    
-                    echo "Taking a wild guess here, you're listening to $currentlyListeningTo <br>";
-                    
+                    echo "Taking a wild guess here, you're currently listening to $currentlyListeningTo <br>";
                 }
 
                 // ELSEIF
+                $favProgLang = "PHP";
 
-                $favProgrammingLang = "PHP";
-
-                if ( $favProgrammingLang == "C++" ) {
-                    
-                    echo "Your favourite programming language is $favProgrammingLang";
-                    
-                } elseif ( $favProgrammingLang == "PHP" ) {
-                    
-                    echo "Good one! You dig $favProgrammingLang";
-                    
-                } else {
-                    
+                if ($favProgLang == "C++"){
+                    echo "Your favorite programming language is $favProgLang";
+                } elseif ($favProgLang == "PHP"){
+                        echo "Good one! You dig $favProgLang";
+                 } else {
                     echo "Guess you don't like PHP or C++. Oh well...";
-                    
-                }
+                 }
+    
+                
 
-            ?>
+           ?>
             
         </div>
         
