@@ -31,44 +31,43 @@
             
             <?php
 
-                // WHILE LOOP
+             // WHILE LOOP
                 $startingNum = 50;
 
-                while ( $startingNum <= 100 ) {
+                while ($startingNum <= 100){
                     echo "$startingNum &nbsp;";
-                    
-                    // increment by 1
+
+                    //Increment by 1
                     $startingNum++;
                 }
 
-                // FOR LOOP
-                for ( $a = 30; $a <= 40; $a++) {
+             // FOR LOOP
+
+                for ( $a = 30; $a <= 40; $a++){
                     echo "Number $a <br>";
                 }
 
-                // FOREACH LOOP
-                $friends = array( "Jim", "Sandra", "Kyle", "Cassandra" );
+            // FOREACH LOOP
 
-                foreach ( $friends as $friend ) {
-                    
-                    // output each individual value in the array
+                $friends = array ("Jim" , "Sandra" , "Kyle" , "Cassandra");
+
+                foreach ($friends as $friend){
+
+                    //Output each individual value in the array
                     echo "$friend is my friend! <br>";
-                    
                 }
 
-                // DO WHILE LOOP
+            // DO WHILE LOOP
+
                 $foo = 10;
 
                 do {
-                    
-                    // do this code
+                    //Do this code
                     echo "Numero $foo <br>";
-                    
-                    // increment by 1
-                    $foo++;
-                    
-                } while ( $foo <= 50 );
 
+                    //Increment by 1
+                    $foo++;
+                } while ($foo <= 50);
 
             ?>
             

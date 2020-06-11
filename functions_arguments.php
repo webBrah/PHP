@@ -29,38 +29,41 @@
         <div class="container">
             <h1><?php echo TITLE; ?></h1>
             
-            <?php
-
-                function myFirstFunction() {
+           <?php
+                function myFirstFunction(){
                     $a = 0;
-                    
+
                     do {
                         echo "$a &nbsp;";
                         $a++;
-                    } while( $a <= 100 );
+                    } while ( $a <= 100 );
                 }
 
-                // call the function
+                // Call the function
                 myFirstFunction();
 
-                function mySecondFunction( $a ) {
+
+                function mySecondFunction( $a ){
+
                     do {
                         echo "$a &nbsp;";
                         $a++;
-                    } while( $a <= 10 );
+                    } while ( $a <= 10 );
                 }
 
-                // call the function
-                // pass in an argument
-                mySecondFunction( 5 );
+                // Call the function
+
+                mySecondFunction (5);
 
 
-                function addTogether( $num1, $num2 ) {
+                function addTogether ( $num1, $num2){
                     $newNum = $num1 + $num2;
                     echo "$num1 + $num2 = $newNum";
                 }
 
-                addTogether( 39, 128 );
+                // Call the function
+
+                addTogether (50,20);
 
             ?>
             
